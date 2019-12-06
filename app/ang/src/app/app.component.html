@@ -1,0 +1,18 @@
+<div class="d-flex justify-content-center">
+    <div style="width: 50%;">
+        <div  class="form-group">
+          <label for="exampleInputEmail1">address</label>
+          <input [(ngModel)]="Address" type="text" class="form-control" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label  for="exampleInputPassword1">Amount</label>
+          <input [(ngModel)]="Amount" type="number" class="form-control" >
+        </div>
+        <div class="form-group">
+                <p>{{totalBalance}}</p>
+              </div>
+        <button (click)="addBalance()" type="button" class="btn btn-primary">Add Balance</button>
+        <button (click)="getBalance()" type="button" class="btn btn-primary">Get Balance</button>
+        <button (click)="withdrawtBalance()" type="button" class="btn btn-primary">Withdraw</button>
+    </div>
+</div>
